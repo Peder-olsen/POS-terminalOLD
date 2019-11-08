@@ -27,6 +27,7 @@ autoUpdater.on('update-available', () => {
 app.on('ready', () => {
   createWindow();
   autoUpdater.checkForUpdatesAndNotify();
+  setInterval(() => autoUpdater.checkForUpdatesAndNotify(), 10000);
 });
 
 app.on('window-all-closed', function () {
