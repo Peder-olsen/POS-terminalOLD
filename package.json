@@ -1,0 +1,29 @@
+{
+  "name": "pos-terminal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clonex/POS-terminal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clonex/POS-terminal/issues"
+  },
+  "homepage": "https://github.com/Clonex/POS-terminal#readme",
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-builder": "^22.1.0"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.0"
+  }
+}
